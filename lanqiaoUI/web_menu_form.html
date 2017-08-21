@@ -1,0 +1,494 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Web UI - 菜单+表单</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/glw.css">
+    </head>
+
+    <body>
+        <div id="top" class="glb-topbar">
+            <div class="glb-layout">
+                <ul class="glb-left">
+                    <li>
+                        <a href="#" target="_blank"><span class="item-ico iconfont icon-home"></span>主页</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><span class="item-ico iconfont icon-mblog"></span>官方微博</a>
+                    </li>
+                </ul>
+                <ul class="glb-right">
+                    <li>你好, 张三丰
+                    </li>
+                    <li>
+                        <a href="#">退出</a>
+                    </li>
+                    <li>
+                        <a href="#">我的蓝桥银行</a>
+                    </li>
+                    <li class="item-stripe">
+                        <a href="#">帮助中心</a>
+                    </li>
+                    <li class="item-stripe">
+                        <a href="#">意见反馈</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="header" class="glb-header">
+            <div class="glb-layout">
+                <div id="logo" class="glb-logo">
+                    <a href="#">
+                        <img src="images/logo_w.png" alt="LOGO" />
+                    </a>
+                </div>
+                <div id="nav" class="glb-nav">
+                    <ul class="glb-nav-items">
+                        <li class="nav-item-uc nav-item-active">
+                            <a href="uc.html">
+                                <div></div>
+                            </a>
+                        </li>
+                        <li class="nav-item-adv">
+                            <a href="adv_list.html">
+                                <div></div>
+                            </a>
+                        </li>
+                        <li class="nav-item-setting">
+                            <a href="member_information.html">
+                                <div></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="glb-nav-hover"></div>
+                </div>
+            </div>
+        </div>
+        <div class="glb-page">
+            <div class="glb-layout">
+                <div class="glb-menu">
+                    <ul class="glb-menu-items">
+                        <li>
+                            <a href="#">
+                                <span class="menu-ico iconfont icon-advert"></span>
+                                <span class="menu-txt">广告管理</span>
+                            </a>
+                        </li>
+                        <li class="menu-current">
+                            <a href="#">
+                                <span class="menu-ico iconfont icon-money"></span>
+                                <span class="menu-txt">交易管理</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu-ico iconfont icon-account"></span>
+                                <span class="menu-txt">会员资料</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu-ico iconfont icon-account"></span>
+                                <span class="menu-txt">会员资料</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu-ico iconfont icon-account"></span>
+                                <span class="menu-txt">会员资料</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glb-main">
+                    <div class="glb-main-hd">
+                        <h3 class="main-title">发布信息</h3>
+                        <div class="main-toolbar">
+                            <a href="#" class="glb-button glb-btn-primary">发布商品</a>
+                        </div>
+                    </div>
+                    <div class="glb-main-bd">
+                        <div class="glb-main-content">
+                            <p class="glb-tips glb-tips-info">激励拖拉机就开始考虑到河南省开封的</p>
+                            <form class="form-body" action="#" id="demoForm">
+                                <div class="form-item">
+                                    <h6 class="form-label">开关选项 :</h6>
+                                    <div class="form-entity">
+                                        <div class="form-field">
+                                            <dl class="form-inline glb-selector">
+                                                <dd>
+                                                    <a class="option" href="javascript:;">
+                                                        <h6>短信认证</h6>
+                                                        <input class="form-cb" type="checkbox" name="f11" value="" />
+                                                    </a>
+                                                </dd>
+                                                <dd class="on">
+                                                    <a class="option" href="javascript:;">
+                                                        <h6>邮件认证</h6>
+                                                        <input class="form-cb" type="checkbox" name="f11" value="" />
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <div class="form-inline">
+                                                <input class="form-ipt glb-col-w100" type="text" name="f12" value="" placeholder="短信码(6位以内)" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-item">
+                                    <h6 class="form-label">设置 :</h6>
+                                    <div class="form-entity">
+                                        <div class="form-field">
+                                            <div class="form-inline form-ipt-group">
+                                                <input class="form-ipt glb-col-w40" type="text" name="f21" value="" placeholder="折扣(10位以内)" />
+                                                <span class="ipt-addon">%</span>
+                                            </div>
+                                            <div class="form-inline">
+                                                <a id="showDialog" href="javascript:;" class="glb-button glb-btn-primary">选择</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-item">
+                                    <h6 class="form-label">图标选择 :</h6>
+                                    <div class="form-entity">
+                                        <div class="form-field">
+                                            <p class="form-text form-text-cap">已选择[移动][联通][电信]</p>
+                                            <dl class="glb-selector glb-selector-ico glb-selector-blk" data-max="3">
+                                                <dd>
+                                                    <a class="option" href="javascript:;">
+                                                        <p class="ico-block iconfont icon-cmcc"></p>
+                                                        <h4 class="ico-text">移动</h4>
+                                                        <input class="form-cb" type="checkbox" name="f31" value="" />
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                    <a class="option" href="javascript:;">
+                                                        <p class="ico-block iconfont icon-cucc"></p>
+                                                        <h4 class="ico-text">联通</h4>
+                                                        <input class="form-cb" type="checkbox" name="f31" value="" />
+                                                    </a>
+                                                </dd>
+                                                <dd class="on">
+                                                    <a class="option" href="javascript:;">
+                                                        <p class="ico-block iconfont icon-ctcc"></p>
+                                                        <h4 class="ico-text">电信</h4>
+                                                        <input class="form-cb" type="checkbox" name="f31" value="" />
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-item">
+                                    <h6 class="form-label">多项输入:</h6>
+                                    <div class="form-entity">
+                                        <div class="form-field">
+                                            <dl class="form-inline glb-selector">
+                                                <dd>
+                                                    <a class="option" href="javascript:;">
+                                                        <h6>无</h6>
+                                                        <input class="form-cb" type="checkbox" name="f41" value="" />
+                                                    </a>
+                                                </dd>
+                                                <dd class="on">
+                                                    <a class="option" href="javascript:;">
+                                                        <h6>有</h6>
+                                                        <input class="form-cb" type="checkbox" name="f41" value="" />
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <div class="form-inline form-ipt-group">
+                                                <input class="form-ipt glb-col-w60" type="text" name="f42" value="" placeholder="数量" />
+                                                <span class="ipt-addon">个</span>
+                                            </div>
+                                            <div class="form-inline form-ipt-group">
+                                                <input class="form-ipt glb-col-w60" type="text" name="f43" value="" placeholder="价格" />
+                                                <span class="ipt-addon">元</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-item">
+                                    <h6 class="form-label">多选项设置 :</h6>
+                                    <div class="form-entity">
+                                        <div class="form-field">
+                                            <div class="form-line">
+                                                <dl class="glb-selector">
+                                                    <dd>
+                                                        <a class="option" href="javascript:;">
+                                                            <h6>无</h6>
+                                                            <input class="form-cb" type="checkbox" name="f71" value="" />
+                                                        </a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a class="option" href="javascript:;">
+                                                            <h6>国内</h6>
+                                                            <input class="form-cb" type="checkbox" name="f71" value="" />
+                                                        </a>
+                                                    </dd>
+                                                    <dd class="on">
+                                                        <a class="option" href="javascript:;">
+                                                            <h6>港澳台</h6>
+                                                            <input class="form-cb" type="checkbox" name="f71" value="" />
+                                                        </a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a class="option" href="javascript:;">
+                                                            <h6>亚洲</h6>
+                                                            <input class="form-cb" type="checkbox" name="f71" value="" />
+                                                        </a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a class="option" href="javascript:;">
+                                                            <h6>欧美</h6>
+                                                            <input class="form-cb" type="checkbox" name="f71" value="" />
+                                                        </a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="form-line form-line-sub">
+                                                <dl class="form-inline glb-selector">
+                                                    <dd class="on">
+                                                        <a class="option" href="javascript:;">
+                                                            <span class="ico-inline iconfont icon-cmcc"></span>移动
+                                                        </a>
+                                                    </dd>
+                                                </dl>
+                                                <div class="form-inline form-ipt-group">
+                                                    <input class="form-ipt glb-col-w60" type="text" name="f73" value="" placeholder="话费余额" />
+                                                    <span class="ipt-addon">元</span>
+                                                </div>
+                                                <div class="form-inline">
+                                                    <p class="form-text form-text-cap">当前剩余<span class="form-text-em">200元</span>
+                                                        <a class="form-text-link" href="#">立即购买</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="form-line form-line-sub">
+                                                <dl class="form-inline glb-selector">
+                                                    <dd class="on">
+                                                        <a class="option" href="javascript:;">
+                                                            <span class="ico-inline iconfont icon-cucc"></span>联通
+                                                        </a>
+                                                    </dd>
+                                                </dl>
+                                                <div class="form-inline form-ipt-group">
+                                                    <input class="form-ipt glb-col-w60" type="text" name="f74" value="" placeholder="话费余额" />
+                                                    <span class="ipt-addon">元</span>
+                                                </div>
+                                                <div class="form-inline">
+                                                    <p class="form-text form-text-cap">当前剩余<span class="form-text-em">100元</span>
+                                                        <a class="form-text-link" href="#">立即购买</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="form-line form-line-sub">
+                                                <dl class="form-inline glb-selector">
+                                                    <dd class="on">
+                                                        <a class="option" href="javascript:;">
+                                                            <span class="ico-inline iconfont icon-ctcc"></span>电信
+                                                        </a>
+                                                    </dd>
+                                                </dl>
+                                                <div class="form-inline form-ipt-group">
+                                                    <input class="form-ipt glb-col-w60" type="text" name="f75" value="" placeholder="话费余额" />
+                                                    <span class="ipt-addon">元</span>
+                                                </div>
+                                                <div class="form-inline">
+                                                    <p class="form-text form-text-cap">当前剩余<span class="form-text-em">300元</span>
+                                                        <a class="form-text-link" href="#">立即购买</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-action clearfix">
+                                            <a id="validateBtn" class="glb-button glb-btn-default" href="javascript:;">点击查看校验效果</a>
+                                            <a id="submitBtn" class="glb-button glb-btn-primary" href="javascript:;">
+                                                <span>点击弹出对话框</span>
+                                            </a>
+                                        </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="glb-bottom">
+            <div class="glb-layout">
+                <div class="glb-left">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">关于我们</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">安全保障</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">诚聘英才</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">商户合作</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">新手指南</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">在线客服</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">帮助中心</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">站点地图</a>
+                        </li>
+                        <li class="last">
+                            <a href="#" target="_blank">联系我们</a>
+                        </li>
+                    </ul>
+                    <p>国信世纪人才服务（北京）有限公司</p>
+                    <p>蓝桥软件学院</p>
+                    <p>Copyright Reserved 2016©蓝桥
+                        <a class="beian" href="http://www.miibeian.gov.cn" target="_blank">吉ICP备 2222233444号</a>
+                    </p>
+                </div>
+                <div class="glb-right glb-tac">
+                    <img class="weixin-code" src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1490252359&di=d9eb73237b5ac949fc8ef5e7c201c0d5&src=http://www.zyue.com/upload/addr/er_20140725105541.png" alt="" />
+                    <p class="weixin-text">扫码关注公众号</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+   <script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/global.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/dialog.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/validate.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function() {
+
+            $("#showDialog").click(function() {
+
+                Dialogx.show({
+                    _url: 'dialog.html',
+                    _title: '请输入充值金额'
+                });
+
+            });
+
+            $("#submitBtn").click(function() {
+
+                Dialogx.confirm('这是一个提示框', function() {
+                    $("#demoForm").submit();
+                });
+
+            });
+
+            $("#validateBtn").click(function() {
+
+                    $("#demoForm").submit();
+
+            });
+            // VALIDATE
+            $("#demoForm").validate(rules);
+
+        });
+
+        // form validate rule
+        var rules = {
+
+            "f11": {
+                tip: "这里是提示信息",
+                rule: {
+                    required: ["表单为空提示信息"]
+                }
+            },
+
+            "f12": {
+                tip: "这里是提示信息",
+                rule: {
+                    required: ["表单为空提示信息"],
+                    length: ["长度为4-20位提示信息", "4-20"]
+                }
+            },
+
+            "f21": {
+                tip: "这里是提示信息",
+                rule: {
+                    required: ["表单为空提示信息"],
+                    length: ["长度为4-20位提示信息", "4-20"]
+                }
+            },
+
+            "f31": {
+                tip: "这里是提示信息",
+                rule: {
+                    required: ["表单为空提示信息"]
+                }
+            },
+
+            "f41": {
+                tip: "这里是提示信息",
+                rule: {
+                    required: ["表单为空提示信息"]
+                }
+
+            },
+
+            "f42": {
+                tip: "这里是数量提示信息",
+                rule: {
+                    required: ["数量为空提示信息"],
+                    length: ["长度为4-20位提示信息", "4-20"]
+                }
+            },
+
+            "f43": {
+                tip: "这里是价钱信息",
+                rule: {
+                    required: ["价钱为空提示信息"],
+                    length: ["价钱为4-20位提示信息", "4-20"]
+                }
+            },
+
+            "f71": {
+                tip: "选项提示信息",
+                rule: {
+                    required: ["选项为空提示信息"]
+                }
+            },
+
+            "f73": {
+                tip: "这里是价钱信息",
+                rule: {
+                    required: ["价钱为空提示信息"],
+                    length: ["价钱为4-20位提示信息", "4-20"]
+                }
+            },
+
+            "f74": {
+                tip: "这里是价钱信息",
+                rule: {
+                    required: ["价钱为空提示信息"],
+                    length: ["价钱为4-20位提示信息", "4-20"]
+                }
+            },
+
+            "f75": {
+                tip: "这里是价钱信息",
+                rule: {
+                    required: ["价钱为空提示信息"],
+                    length: ["价钱为4-20位提示信息", "4-20"]
+                }
+            }
+
+        };
+    </script>
+
+</html>
