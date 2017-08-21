@@ -1,0 +1,843 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+        <link rel="stylesheet" type="text/css" href="css/gla.css" />
+        <link rel="stylesheet" type="text/css" href="" id="themeCss" />
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/00aba9.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/16a085.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/1abc9c.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/2980b9.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/2ecc71.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/339933.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/34495e.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/3498db.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/8cbf26.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/9b59b6.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/00a2e6.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/e51400.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/e671b8.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/e74c3c.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/f1c40f.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/f39c12.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/ff0097.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/theme/ffc40d.css">-->
+    </head>
+
+    <body>
+        <div id="frameHeader" class="frame-head">
+            <div class="frame-logo">
+                <a class="frame-logo-main" href="#">
+                    <img src="images/logo_s.png" alt="蓝桥" />
+                </a>
+                <p class="frame-logo-sub">蓝桥</p>
+            </div>
+            <div class="frame-topbar glb-topbar"></div>
+        </div>
+        <div id="frameBody" class="frame-body">
+            <div class="frame-menu">
+                <a id="toggleMenuBtn" class="frame-menu-console iconfont icon-3line-x" href="javascript:;"></a>
+                <div class="frame-menu-wrapper">
+                    <dl class="frame-menu-item">
+                        <dt class="frame-menu-mod">
+							<a href="javascript:;">
+								<div class="menu-icon iconfont icon-caret"></div>
+								<p class="menu-text">通用设置</p>
+							</a>
+						</dt>
+                        <dd class="frame-menu-sub">
+                            <a href="#">
+                                <div class="menu-icon iconfont icon-members"></div>
+                                <p class="menu-text">用户</p>
+                            </a>
+                        </dd>
+                        <dd class="frame-menu-sub frame-menu-active">
+                            <a href="#">
+                                <div class="menu-icon iconfont icon-shop"></div>
+                                <p class="menu-text">企业</p>
+                            </a>
+                        </dd>
+                        <dd class="frame-menu-sub">
+                            <a href="#">
+                                <div class="menu-icon iconfont icon-reviewing"></div>
+                                <p class="menu-text">商家</p>
+                            </a>
+                        </dd>
+                        <dd class="frame-menu-sub">
+                            <a href="#">
+                                <div class="menu-icon iconfont icon-members"></div>
+                                <p class="menu-text">信息</p>
+                            </a>
+                        </dd>
+                        <dd class="frame-menu-sub">
+                            <a href="#">
+                                <div class="menu-icon iconfont icon-3line-x"></div>
+                                <p class="menu-text">用户组</p>
+                            </a>
+                        </dd>
+                        <dd class="frame-menu-sub">
+                            <a href="#">
+                                <div class="menu-icon iconfont icon-3line-x"></div>
+                                <p class="menu-text">财务</p>
+                            </a>
+                        </dd>
+                    </dl>
+                    <dl class="frame-menu-item">
+                        <dt class="frame-menu-mod">
+							<a href="javascript:;">
+								<div class="menu-icon iconfont icon-caret"></div>
+								<p class="menu-text">信用卡</p>
+							</a>
+						</dt>
+                        <dd class="frame-menu-sub">
+                            <a href="#">
+                                <div class="menu-icon iconfont icon-members"></div>
+                                <p class="menu-text">分期</p>
+                            </a>
+                        </dd>
+                        <dd class="frame-menu-sub">
+                            <a href="#">
+                                <div class="menu-icon iconfont icon-reviewing"></div>
+                                <p class="menu-text">账单</p>
+                            </a>
+                        </dd>
+                        <dd class="frame-menu-sub">
+                            <a href="#">
+                                <div class="menu-icon iconfont icon-3line-x"></div>
+                                <p class="menu-text">授权</p>
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="frame-wrapper">
+                <div class="frame-msub" id="frameMsub">
+                    <a class="frame-msub-toggle" id="frameMsubToggle" href="javascript:;">
+                        <span class="iconfont icon-3line-x"></span>
+                    </a>
+                    <div class="frame-msub-hd">
+                        <h4 class="msub-title"><span class="iconfont icon-setting"></span>商户管理</h4>
+                    </div>
+                    <div class="frame-msub-bd">
+                        <ul class="frame-msub-items">
+                            <li>
+                                <a href="#"><span class="iconfont icon-parameter"></span>商家列表</a>
+                            </li>
+                            <li class="msub-current">
+                                <a href="#"><span class="iconfont icon-liuliang"></span>商家表</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="iconfont icon-payitem"></span>商家列表列表列表</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="iconfont icon-account"></span>商家列表(11)</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="iconfont icon-advert"></span>水电费是否收到</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="frame-page">
+                    <div class="frame-main">
+                        <div class="frame-main-hd">
+                            <h3 class="frame-title">设置皮肤颜色</h3>
+                            <h6 class="frame-tips glb-text-success"><span class="iconfont icon-correct"></span>操作成功</h6>
+                        </div>
+                        <ul class="glb-search glb-set-theme">
+                            <li>
+                                <a id="setTheme1" href="javascript:;" class="glb-button glb-btn-default" data-theme="00aba9">点击换肤</a>
+                                <a id="setTheme2" href="javascript:;" class="glb-button glb-btn-default" data-theme="16a085">点击换肤</a>
+                                <a id="setTheme3" href="javascript:;" class="glb-button glb-btn-default" data-theme="1abc9c">点击换肤</a>
+                                <a id="setTheme4" href="javascript:;" class="glb-button glb-btn-default" data-theme="2980b9">点击换肤</a>
+                                <a id="setTheme5" href="javascript:;" class="glb-button glb-btn-default" data-theme="2ecc71">点击换肤</a>
+                                <a id="setTheme6" href="javascript:;" class="glb-button glb-btn-default" data-theme="339933">点击换肤</a>
+                                <a id="setTheme7" href="javascript:;" class="glb-button glb-btn-default" data-theme="34495e">点击换肤</a>
+                                <a id="setTheme8" href="javascript:;" class="glb-button glb-btn-default" data-theme="3498db">点击换肤</a>
+                                <a id="setTheme9" href="javascript:;" class="glb-button glb-btn-default" data-theme="8cbf26">点击换肤</a>
+                                <a id="setTheme10" href="javascript:;" class="glb-button glb-btn-default" data-theme="9b59b6">点击换肤</a>
+                                <a id="setTheme11" href="javascript:;" class="glb-button glb-btn-default" data-theme="00a2e6">点击换肤</a>
+                                <a id="setTheme12" href="javascript:;" class="glb-button glb-btn-default" data-theme="e51400">点击换肤</a>
+                                <a id="setTheme13" href="javascript:;" class="glb-button glb-btn-default" data-theme="e671b8">点击换肤</a>
+                                <a id="setTheme14" href="javascript:;" class="glb-button glb-btn-default" data-theme="e74c3c">点击换肤</a>
+                                <a id="setTheme15" href="javascript:;" class="glb-button glb-btn-default" data-theme="f1c40f">点击换肤</a>
+                                <a id="setTheme16" href="javascript:;" class="glb-button glb-btn-default" data-theme="f39c12">点击换肤</a>
+                                <a id="setTheme17" href="javascript:;" class="glb-button glb-btn-default" data-theme="ff0097">点击换肤</a>
+                                <a id="setTheme18" href="javascript:;" class="glb-button glb-btn-default" data-theme="ffc40d">点击换肤</a>
+                            </li>
+                        </ul>
+                        <div class="frame-main-bd">
+                            <ul class="glb-steps glb-stepbar glb-steps-col4">
+                                <li>
+                                    <p class="step-text">1. 注册账号</p>
+                                </li>
+                                <li class="step-current">
+                                    <p class="step-text">2. 账号验证</p>
+                                </li>
+                                <li>
+                                    <p class="step-text">3. 注册成功,等待审核</p>
+                                </li>
+                                <li>
+                                    <p class="step-text">4. 申请成功</p>
+                                </li>
+                            </ul>
+                            <ul class="glb-steps glb-stepline glb-steps-col3">
+                                <li>
+                                    <p class="step-text">选择广告类型</p>
+                                </li>
+                                <li class="step-current">
+                                    <p class="step-text">填写广告信息</p>
+                                </li>
+                                <li>
+                                    <p class="step-text">发布成功</p>
+                                </li>
+                            </ul>
+                            <ul class="glb-tabs">
+                                <li class="current">
+                                    <a class="tab-item" href="#">菜单001</a>
+                                </li>
+                                <li>
+                                    <a class="tab-item" href="#">菜单001</a>
+                                </li>
+                                <li>
+                                    <a class="tab-item" href="#">菜单001</a>
+                                </li>
+                                <li>
+                                    <a class="tab-item" href="#">菜单001</a>
+                                </li>
+                                <li class="glb-col-right">
+                                    <a href="#" class="glb-button glb-btn-default">
+                                        <span class="iconfont icon-shop"></span> 刷新
+                                    </a>
+                                    <a href="#" class="glb-button glb-btn-primary">
+                                        <span class="iconfont icon-reviewing"></span> 刷新
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="glb-search">
+                                <li>
+                                    <input type="text" class="form-ipt" name="" value="" placeholder="请输入" />
+                                </li>
+                                <li>
+                                    <input type="text" class="form-ipt" name="" value="" placeholder="请输入" />
+                                </li>
+                                <li>
+                                    <select name="" class="form-sel">
+                                        <option value="">请选择</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <dl class="glb-selector" data-max="3">
+                                        <dt>状态:</dt>
+                                        <dd>
+                                            <a class="option" href="javascript:;">
+                                                <h6>状态1</h6>
+                                                <input class="form-cb" type="checkbox" name="" value="" />
+                                            </a>
+                                        </dd>
+                                        <dd class="on">
+                                            <a class="option" href="javascript:;">
+                                                <h6>状态1</h6>
+                                                <input class="form-cb" type="checkbox" name="" value="" />
+                                            </a>
+                                        </dd>
+                                        <dd>
+                                            <a class="option" href="javascript:;">
+                                                <h6>状态1</h6>
+                                                <input class="form-cb" type="checkbox" name="" value="" />
+                                            </a>
+                                        </dd>
+                                        <dd>
+                                            <a class="option" href="javascript:;">
+                                                <h6>状态1</h6>
+                                                <input class="form-cb" type="checkbox" name="" value="" />
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="glb-button glb-btn-default">重置</a>
+                                </li>
+                                <li>
+                                    <input type="submit" class="glb-button glb-btn-primary" placeholder="请输入" />
+                                </li>
+                                <li class="glb-col-right">
+                                    <a id="showDialogBtn" href="javascript:;" class="glb-button glb-btn-default">点击打开一个对话框</a>
+                                    <a id="alertBtn" href="javascript:;" class="glb-button glb-btn-primary">
+                                        <span class="iconfont icon-members"></span> 提示框
+                                    </a>
+                                </li>
+                            </ul>
+                            <table class="glb-tables">
+                                <thead>
+                                    <tr>
+                                        <th class="tbs-col-cb">
+                                            <input type="checkbox" name="" value="" />
+                                        </th>
+                                        <th>ID</th>
+                                        <th>名称</th>
+                                        <th>
+                                            <a href="#" class="glb-order-box">日期
+                                                <div class="glb-order-arr glb-order-dsc">
+                                                    <span class="order-arr-up"></span>
+                                                    <span class="order-arr-down"></span>
+                                                </div>
+                                            </a>
+                                        </th>
+                                        <th>类型</th>
+                                        <th>标题</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tbs-col-cb">
+                                            <input type="checkbox" name="" value="" />
+                                        </td>
+                                        <td>1</td>
+                                        <td>
+                                            <a href="#">今晚打老虎</a>
+                                        </td>
+                                        <td>2016-10-17</td>
+                                        <td>正常</td>
+                                        <td>今天天气真好啊,是吗</td>
+                                        <td>
+                                            <a href="#">删除</a>
+                                            <span class="tbs-split">|</span>
+                                            <a href="#">查看</a>
+                                            <span class="tbs-split">|</span>
+                                            <a href="#">设置</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <td class="tbs-col-cb">
+                                        <input type="checkbox" name="" value="" />
+                                    </td>
+                                    <td colspan="6">
+                                        <div class="glb-left glb-col-left">
+                                            <button class="glb-button glb-btn-default">立即设置上传</button>
+                                            <button class="glb-button glb-btn-default">删除</button>
+                                            <a href="#" class="glb-button glb-btn-default">
+                                                <span class="iconfont icon-refresh"></span> 刷新
+                                            </a>
+                                        </div>
+                                        <ul class="glb-right glb-pagination">
+                                            <li>
+                                                <a href="">1</a>
+                                            </li>
+                                            <li>
+                                                <span>...</span>
+                                            </li>
+                                            <li>
+                                                <a href="">5</a>
+                                            </li>
+                                            <li>
+                                                <a href="">6</a>
+                                            </li>
+                                            <li>
+                                                <a href="">7</a>
+                                            </li>
+                                            <li>
+                                                <a href="">8</a>
+                                            </li>
+                                            <li class="current">
+                                                <a>9</a>
+                                            </li>
+                                            <li>
+                                                <a href="">10</a>
+                                            </li>
+                                            <li>
+                                                <a href="">11</a>
+                                            </li>
+                                            <li>
+                                                <a href="">12</a>
+                                            </li>
+                                            <li>
+                                                <a href="">13</a>
+                                            </li>
+                                            <li>
+                                                <span>...</span>
+                                            </li>
+                                            <li>
+                                                <a href="">24</a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tfoot>
+                            </table>
+
+                            <div class="form-body">
+                                <form id="demoForm" action="">
+                                    <div class="glb-col-p60">
+                                        <div class="form-item">
+                                            <h6 class="form-label">开关选项 :</h6>
+                                            <div class="form-entity">
+                                                <div class="form-field">
+                                                    <dl class="form-inline glb-selector">
+                                                        <dd>
+                                                            <a class="option" href="javascript:;">
+                                                                <h6>短信认证</h6>
+                                                                <input class="form-cb" type="checkbox" name="" value="" />
+                                                            </a>
+                                                        </dd>
+                                                        <dd class="on">
+                                                            <a class="option" href="javascript:;">
+                                                                <h6>邮件认证</h6>
+                                                                <input class="form-cb" type="checkbox" name="" value="" />
+                                                            </a>
+                                                        </dd>
+                                                    </dl>
+                                                    <div class="form-inline">
+                                                        <input class="form-ipt glb-col-w100" type="text" name="userName" value="" placeholder="短信码(6位以内)" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item">
+                                            <h6 class="form-label">设置 :</h6>
+                                            <div class="form-entity">
+                                                <div class="form-field">
+                                                    <div class="form-inline form-ipt-group">
+                                                        <input class="form-ipt glb-col-w40" type="text" name="userName" value="" placeholder="折扣(10位以内)" />
+                                                        <span class="ipt-addon">%</span>
+                                                    </div>
+                                                    <div class="form-inline">
+                                                        <a href="javascript:;" class="glb-button glb-btn-primary">设置</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item">
+                                            <h6 class="form-label">图标选择 :</h6>
+                                            <div class="form-entity">
+                                                <div class="form-field">
+                                                    <p class="form-text form-text-cap">已选择[移动][联通][电信]</p>
+                                                    <dl class="glb-selector glb-selector-ico glb-selector-blk" data-max="3">
+                                                        <dd>
+                                                            <a class="option" href="javascript:;">
+                                                                <p class="ico-block iconfont icon-cmcc"></p>
+                                                                <h4 class="ico-text">移动</h4>
+                                                                <input class="form-cb" type="checkbox" name="" value="" />
+                                                            </a>
+                                                        </dd>
+                                                        <dd>
+                                                            <a class="option" href="javascript:;">
+                                                                <p class="ico-block iconfont icon-cucc"></p>
+                                                                <h4 class="ico-text">联通</h4>
+                                                                <input class="form-cb" type="checkbox" name="" value="" />
+                                                            </a>
+                                                        </dd>
+                                                        <dd class="on">
+                                                            <a class="option" href="javascript:;">
+                                                                <p class="ico-block iconfont icon-ctcc"></p>
+                                                                <h4 class="ico-text">电信</h4>
+                                                                <input class="form-cb" type="checkbox" name="" value="" />
+                                                            </a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item">
+                                            <h6 class="form-label">多项输入:</h6>
+                                            <div class="form-entity">
+                                                <div class="form-field">
+                                                    <dl class="form-inline glb-selector">
+                                                        <dd>
+                                                            <a class="option" href="javascript:;">
+                                                                <h6>无</h6>
+                                                                <input class="form-cb" type="checkbox" name="" value="" />
+                                                            </a>
+                                                        </dd>
+                                                        <dd class="on">
+                                                            <a class="option" href="javascript:;">
+                                                                <h6>有</h6>
+                                                                <input class="form-cb" type="checkbox" name="" value="" />
+                                                            </a>
+                                                        </dd>
+                                                    </dl>
+                                                    <div class="form-inline form-ipt-group">
+                                                        <input class="form-ipt glb-col-w60" type="text" name="userName" value="" placeholder="数量" />
+                                                        <span class="ipt-addon">个</span>
+                                                    </div>
+                                                    <div class="form-inline form-ipt-group">
+                                                        <input class="form-ipt glb-col-w60" type="text" name="userName" value="" placeholder="价格" />
+                                                        <span class="ipt-addon">元</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item">
+                                            <h6 class="form-label">多选项设置 :</h6>
+                                            <div class="form-entity">
+                                                <div class="form-field">
+                                                    <div class="form-line">
+                                                        <dl class="form-inline glb-selector">
+                                                            <dd>
+                                                                <a class="option" href="javascript:;">
+                                                                    <h6>无</h6>
+                                                                    <input class="form-cb" type="checkbox" name="" value="" />
+                                                                </a>
+                                                            </dd>
+                                                            <dd>
+                                                                <a class="option" href="javascript:;">
+                                                                    <h6>国内</h6>
+                                                                    <input class="form-cb" type="checkbox" name="" value="" />
+                                                                </a>
+                                                            </dd>
+                                                            <dd class="on">
+                                                                <a class="option" href="javascript:;">
+                                                                    <h6>国外</h6>
+                                                                    <input class="form-cb" type="checkbox" name="" value="" />
+                                                                </a>
+                                                            </dd>
+                                                        </dl>
+                                                        <div class="form-inline form-ipt-group">
+                                                            <input class="form-ipt glb-col-w60" type="text" name="userName" value="" placeholder="输入" />
+                                                            <span class="ipt-addon">份</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-line form-line-sub">
+                                                        <dl class="form-inline glb-selector">
+                                                            <dd class="on">
+                                                                <a class="option" href="javascript:;">
+                                                                    <span class="ico-inline iconfont icon-cmcc"></span>移动
+                                                                </a>
+                                                            </dd>
+                                                        </dl>
+                                                        <div class="form-inline form-ipt-group">
+                                                            <input class="form-ipt glb-col-w60" type="text" name="userName" value="" placeholder="话费余额" />
+                                                            <span class="ipt-addon">元</span>
+                                                        </div>
+                                                        <div class="form-inline">
+                                                            <p class="form-text form-text-cap">当前剩余<span class="form-text-em">200元</span>
+                                                                <a class="form-text-link" href="#">立即购买</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-line form-line-sub">
+                                                        <dl class="form-inline glb-selector">
+                                                            <dd class="on">
+                                                                <a class="option" href="javascript:;">
+                                                                    <span class="ico-inline iconfont icon-cucc"></span>联通
+                                                                </a>
+                                                            </dd>
+                                                        </dl>
+                                                        <div class="form-inline form-ipt-group">
+                                                            <input class="form-ipt glb-col-w60" type="text" name="userName" value="" placeholder="话费余额" />
+                                                            <span class="ipt-addon">元</span>
+                                                        </div>
+                                                        <div class="form-inline">
+                                                            <p class="form-text form-text-cap">当前剩余<span class="form-text-em">100元</span>
+                                                                <a class="form-text-link" href="#">立即购买</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-line form-line-sub">
+                                                        <dl class="form-inline glb-selector">
+                                                            <dd class="on">
+                                                                <a class="option" href="javascript:;">
+                                                                    <span class="ico-inline iconfont icon-ctcc"></span>电信
+                                                                </a>
+                                                            </dd>
+                                                        </dl>
+                                                        <div class="form-inline form-ipt-group">
+                                                            <input class="form-ipt glb-col-w60" type="text" name="userName" value="" placeholder="话费余额" />
+                                                            <span class="ipt-addon">元</span>
+                                                        </div>
+                                                        <div class="form-inline">
+                                                            <p class="form-text form-text-cap">当前剩余<span class="form-text-em">300元</span>
+                                                                <a class="form-text-link" href="#">立即购买</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-action clearfix">
+                                            <a class="glb-button glb-btn-default" href="reg_seller_c">立即提交</a>
+                                            <a id="submitBtn" class="glb-button glb-btn-primary" href="add_advert_info.html">
+                                                <span>继续设置</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="glb-col-p40">
+                                        <div class="form-item form-item-qt">
+                                            <h6 class="form-label">企业证件照 :</h6>
+                                            <div class="form-entity">
+                                                <div class="form-field">
+                                                    <div class="form-inline">
+                                                        <a href="javascript:;" class="form-line-sub glb-button glb-btn-default">点击上传企业证件照</a>
+                                                        <a href="#" class="glb-preview" target="_blank">
+                                                            <img src="http://r4.ykimg.com/05140000576CA32E67BC3C13B50E4C6F" alt="" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="form-inline">
+                                                        <a href="javascript:;" class="form-line-sub glb-button glb-btn-default">点击上传企业证件照</a>
+                                                        <a href="#" class="glb-preview" target="_blank">
+                                                            <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3791354460,1562873960&fm=58" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-caption">
+                                                <h6>1. 内容简介本书分为上学期和下学期两部分</h6>
+                                                <h6>2. 主要内容包括：<span class="form-text-em">写校</span>园一处景物；</h6>
+                                                <h6>3. 是2012年西安出版社出版的一本图书</h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-item form-item-qt">
+                                            <h6 class="form-label">企业证件照 :</h6>
+                                            <div class="form-entity">
+                                                <div class="form-field">
+                                                    <textarea class="form-ta" name="name-c1" rows="" cols=""></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <form class="form-body" action="#" id="form2">
+                                <div class="form-item">
+                                    <h6 class="form-label">用户名:</h6>
+                                    <div class="form-entity">
+                                        <div class="form-field">
+                                            <input class="form-ipt" type="text" name="name-a" value="" placeholder="请输入用户名" />
+                                        </div>
+                                    </div>
+                                    <div class="form-caption">
+                                        <h6>1. 内容简介本书分为上学期和下学期两部分</h6>
+                                        <h6>2. 主要内容包括：<span class="form-text-em">写校</span>园一处景物；</h6>
+                                        <h6>3. 是2012年西安出版社出版的一本图书</h6>
+                                    </div>
+                                </div>
+                                <div class="form-item">
+                                    <h6 class="form-label">下拉框:</h6>
+                                    <div class="form-entity">
+                                        <div class="form-field">
+                                            <select name="name-b" class="form-sel">
+                                                <option value="">请选择项目</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-item">
+                                    <h6 class="form-label">Textarea:</h6>
+                                    <div class="form-entity">
+                                        <div class="form-field">
+                                            <textarea class="form-ta" name="name-c" rows="" cols=""></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <ul class="glb-pitems">
+                                <li class="glb-col-p50">
+                                    <div class="pitem-main">
+                                        <div class="pitem-picbar glb-preview">
+                                            <img src="images/pic/p1.png" alt="" />
+                                            <h6 class="pitem-label pitem-label-bottom">你好吗大街上考虑对方</h6>
+                                            <span class="pitem-label pitem-label-left">5图</span>
+                                            <span class="pitem-label pitem-label-right">鞋帽商品</span>
+                                        </div>
+                                        <div class="pitem-infobar">
+                                            <div class="pitem-info-hd">
+                                                <h3 class="pitem-title">大标题</h3>
+                                                <span class="pitem-subtxt">小标题</span>
+                                                <span class="pitem-badge">什么分类</span>
+                                            </div>
+                                            <p class="pitem-desc">定了反抗军绿色定了反抗军绿色定了反抗军绿色</p>
+                                            <div class="pitem-props">
+                                                <p class="pitem-pp">
+                                                    <span class="pitem-lb">价格:</span>
+                                                    <span class="glb-text-delete">399.00</span>
+                                                    <span class="glb-text-h4 glb-text-price">399.00</span>
+                                                </p>
+                                                <p class="pitem-pp">
+                                                    <span class="pitem-lb">发货地:</span>北京市
+                                                </p>
+                                            </div>
+                                            <table class="pitem-table">
+                                                <tr>
+                                                    <th>属性1</th>
+                                                    <th>属性2</th>
+                                                    <th>属性3</th>
+                                                    <th>属性4</th>
+                                                    <th>属性5</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>42</td>
+                                                    <td>无</td>
+                                                    <td>已设置</td>
+                                                    <td>订单</td>
+                                                </tr>
+                                            </table>
+                                            <div class="pitem-action">
+                                                <a href="javascript:;" class="pitem-btn">
+                                                    <span class="pbtn-ico iconfont icon-add"></span>
+                                                    <span class="pbtn-txt">已收款</span>
+                                                </a>
+                                                <a href="javascript:;" class="pitem-btn">
+                                                    <span class="pbtn-ico iconfont icon-captcha"></span>
+                                                    <span class="pbtn-txt">设置爱</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glb-col-p50">
+                                    <a href="#" class="pitem-main">
+                                        <div class="pitem-picbar glb-preview">
+                                            <img src="images/pic/p2.png" alt="" />
+                                            <h6 class="pitem-label pitem-label-bottom">你好吗大街上考虑对方</h6>
+                                            <span class="pitem-label pitem-label-left">5图</span>
+                                            <span class="pitem-label pitem-label-right">鞋帽商品</span>
+                                        </div>
+                                        <div class="pitem-infobar">
+                                            <div class="pitem-info-hd">
+                                                <h3 class="pitem-title">死定了反抗军绿色的空间了</h3>
+                                            </div>
+                                            <p class="pitem-desc">定了反抗军绿色定了反抗军绿色定了反抗军绿色</p>
+                                            <div class="pitem-props">
+                                                <p class="pitem-pp">
+                                                    <span class="pitem-lb">价格:</span>
+                                                    <span class="glb-text-delete">399.00</span>
+                                                    <span class="glb-text-h4 glb-text-price">399.00</span>
+                                                </p>
+                                                <p class="pitem-pp">
+                                                    <span class="pitem-lb">发货地:</span>北京市
+                                                </p>
+                                            </div>
+                                            <table class="pitem-table">
+                                                <tr>
+                                                    <th>属性1</th>
+                                                    <th>属性2</th>
+                                                    <th>属性3</th>
+                                                    <th>属性4</th>
+                                                    <th>属性5</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>42</td>
+                                                    <td>无</td>
+                                                    <td>已设置</td>
+                                                    <td>订单</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="glb-col-p50">
+                                    <a href="#" class="pitem-main">
+                                        <div class="pitem-picbar glb-preview">
+                                            <img src="images/pic/p3.png" alt="" />
+                                            <h6 class="pitem-label pitem-label-bottom">你好吗大街上考虑对方</h6>
+                                            <span class="pitem-label pitem-label-left">5图</span>
+                                            <span class="pitem-label pitem-label-right">鞋帽商品</span>
+                                        </div>
+                                        <div class="pitem-infobar">
+                                            <div class="pitem-info-hd">
+                                                <h3 class="pitem-title">死定了反抗军绿色的空间了</h3>
+                                            </div>
+                                            <p class="pitem-desc">定了反抗军绿色定了反抗军绿色定了反抗军绿色</p>
+                                            <div class="pitem-props">
+                                                <p class="pitem-pp">
+                                                    <span class="pitem-lb">价格:</span>
+                                                    <span class="glb-text-delete">399.00</span>
+                                                    <span class="glb-text-h4 glb-text-price">399.00</span>
+                                                </p>
+                                                <p class="pitem-pp">
+                                                    <span class="pitem-lb">发货地:</span>北京市
+                                                </p>
+                                            </div>
+                                            <table class="pitem-table">
+                                                <tr>
+                                                    <th>属性1</th>
+                                                    <th>属性2</th>
+                                                    <th>属性3</th>
+                                                    <th>属性4</th>
+                                                    <th>属性5</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>42</td>
+                                                    <td>无</td>
+                                                    <td>已设置</td>
+                                                    <td>订单</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="glb-col-p50">
+                                    <a href="#" class="pitem-main">
+                                        <div class="pitem-picbar glb-preview">
+                                            <img src="images/pic/p4.png" alt="" />
+                                            <h6 class="pitem-label pitem-label-bottom">你好吗大街上考虑对方</h6>
+                                            <span class="pitem-label pitem-label-left">5图</span>
+                                            <span class="pitem-label pitem-label-right">鞋帽商品</span>
+                                        </div>
+                                        <div class="pitem-infobar">
+                                            <div class="pitem-info-hd">
+                                                <h3 class="pitem-title">死定了反抗军绿色的空间了</h3>
+                                            </div>
+                                            <p class="pitem-desc">定了反抗军绿色定了反抗军绿色定了反抗军绿色</p>
+                                            <div class="pitem-props">
+                                                <p class="pitem-pp">
+                                                    <span class="pitem-lb">价格:</span>
+                                                    <span class="glb-text-delete">399.00</span>
+                                                    <span class="glb-text-h4 glb-text-price">399.00</span>
+                                                </p>
+                                                <p class="pitem-pp">
+                                                    <span class="pitem-lb">发货地:</span>北京市
+                                                </p>
+                                            </div>
+                                            <table class="pitem-table">
+                                                <tr>
+                                                    <th>属性1</th>
+                                                    <th>属性2</th>
+                                                    <th>属性3</th>
+                                                    <th>属性4</th>
+                                                    <th>属性5</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>42</td>
+                                                    <td>无</td>
+                                                    <td>已设置</td>
+                                                    <td>订单</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/global.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/gla.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function() {
+
+            $(".glb-set-theme .glb-button").click(function() {
+                var theme = $(this).data("theme");
+                $("#themeCss").attr("href", "css/theme/" + theme + ".css")
+            });
+
+        });
+    </script>
+
+</html>
