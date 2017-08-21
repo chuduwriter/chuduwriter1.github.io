@@ -9,13 +9,16 @@
 		<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
 		<script type="text/javascript" src="js/jquery.ztree.all.min.js"></script>
 		<SCRIPT LANGUAGE="JavaScript">
-			var zTreeObj;
+			/*var zTreeObj;
 			// zTree 的参数配置，深入使用请参考 API 文档（setting 配置详解）
 			var setting = {
 				async: {
 					enable: true,
-					url:"./data/provinces.json",
-					type:"get"
+				    
+					type:"get",
+					level:"1",
+					url:"http://ali-city.showapi.com/areaName"
+				
 				}
 			};
 			
@@ -25,7 +28,24 @@
 					//第一个参数是jQuery对象，第二个：关于这棵树的配置，第三个：数据
 					zTreeObj = $.fn.zTree.init($("#treeDemo"), setting);
 				}
-			);
+			);*/
+			var zNodes;  
+    $(document).ready(function(){  
+                $.ajax({    
+                    async : false,    
+                    cache:false,    
+                    type:'get',    
+                    dataType : 'json',    
+                    url: 'http://ali-city.showapi.com/areaName',//请求的action路径    
+                    error: function () {//请求失败处理函数    
+                        alert('请求失败');   
+                    },    
+                    success:function(data){ //请求成功后处理函数。  
+                       zNodes = data;   //把后台封装好的简单Json格式赋给treeNodes  
+                    }    
+                });   
+                $.fn.zTree.init($("#treeDemo"), setting, zNodes);  
+        });
 		</SCRIPT>
 	</HEAD>
 
